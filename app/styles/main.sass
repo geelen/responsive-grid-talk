@@ -185,9 +185,10 @@ pre
   margin: 30px
 
 .bespoke-bullet
-  display: none
-  &.bespoke-bullet-last-active
-    display: block
+  opacity: 1
+  transition: all 0.3s
+.bespoke-bullet-inactive
+  opacity: 0
 
 .strike
   text-decoration: line-through
@@ -201,3 +202,4 @@ div[id^="gist"]
     margin-bottom: 0
   .gist-meta
     display: none
+
