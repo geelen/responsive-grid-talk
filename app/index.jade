@@ -2,7 +2,7 @@ extends layout
 
 block content
   article.bespoke-parent
-    section(data-bespoke-state='')
+    section(data-bespoke-state='japan')
       .content
         .byline
           .classy This talk is called:
@@ -68,20 +68,21 @@ block content
       .content(data-bespoke-bullet)
         .byline
           .classy Grids
-        .step(data-bespoke-bullet)
-          h2 affect
-            strong  both
-            |  design & build
-          .unbrokenline
-        .step(data-bespoke-bullet)
-          h2 are usually chosen
-            strong  early
-          .unbrokenline
-        .step(data-bespoke-bullet)
-          h2 are
-            strong  hard to change
-            |  later
-          .unbrokenline
+        .steps
+          .step(data-bespoke-bullet)
+            h2 affect
+              strong  both
+              |  design & build
+            .unbrokenline
+          .step(data-bespoke-bullet)
+            h2 are usually chosen
+              strong  early
+            .unbrokenline
+          .step(data-bespoke-bullet)
+            h2 are
+              strong  hard to change
+              |  later
+            .unbrokenline
 
     section(data-bespoke-state='')
       .content
