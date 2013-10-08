@@ -65,50 +65,109 @@ block content
         .unbrokenline
 
     section(data-bespoke-state='')
-      .content
-        h2 Grids affect both design & build
-        h2 Usually chosen early on
-        h2 Hard to change later
+      .content(data-bespoke-bullet)
+        .byline
+          .classy Grids
+        .step(data-bespoke-bullet)
+          h2 affect
+            strong  both
+            |  design & build
+          .unbrokenline
+        .step(data-bespoke-bullet)
+          h2 are usually chosen
+            strong  early
+          .unbrokenline
+        .step(data-bespoke-bullet)
+          h2 are
+            strong  hard to change
+            |  later
+          .unbrokenline
 
     section(data-bespoke-state='')
       .content
-        h2 There are a lot of grid systems out there
-        h2 We're going to look at a few, then build our own
+        .byline
+          .classy Problem #1
+        h2 There are
+        h1
+          strong  A LOT
+        h2 of grid systems out there.
+        .unbrokenline
+
     section(data-bespoke-state='')
       .content
-        h2 First up,
-        h2 We're going to look at how a few work, then build our own
+        .byline
+          .classy Problem #2
+        h2 There's a lot more to it
+        .byline
+          .classy than
+        h2 breakpoints
+        .byline
+          .classy &
+        h2 column & gutter widths
+        .unbrokenline
+
     section(data-bespoke-state='')
       .content
-        h2 Grids' columns:
-        h2 Fixed width
-        h2 Multiple-width
-        h2 Fluid width
-    section(data-bespoke-state='')
+        .byline
+          .classy Let us
+        h2 explore how they differ
+        .byline
+          .classy and then
+        h2 look at one I built
+        .unbrokenline
+
+    section(data-bespoke-state='code')
       .content
-        h2 Responsive grids can have
-        h2 Fixed # columns
-        h2 Semi-fixed # columns
-        h2 Flexible # columns
+        table
+          thead
+            tr
+              td Column width:
+              td Fixed width columns
+              td Multiple-width columns
+              td Fluid columns
+          tbody
+            tr
+              td
+              td No matter what
+              td A few distinct sizes
+              td Adapt to your browser display
+
+    section(data-bespoke-state='code')
+      .content
+        table
+          thead
+            tr
+              td No. columns:
+          tbody
+            tr
+              td Fixed # columns
+              td No matter what
+            tr
+              td Semi-fixed # columns
+              td Usually fixed + single column for mobile
+            tr
+              td Flexible # columns
+              td Num columns depends on width
+
     section(data-bespoke-state='code')
       .content
         table
           thead
             tr
               td
-              td Fixed width cols
-              td Multiple-width
+              td Fixed width columns
+              td Multiple-width columns
               td Fluid columns
           tbody
             tr
-              td Fixed number
+              td Fixed # columns
               td
                 a(href="http://960.gs/demo.html", target="_blank") 960.gs
               td ?
               td
                 a(href="http://purecss.io/grids/#grids-on-mobile", target="_blank") Pure.css
             tr
-              td Semi-fixed
+              td Semi-fixed # columns
               td
                 a(href="http://www.getskeleton.com/", target="_blank") Skeleton
               td
@@ -116,33 +175,39 @@ block content
               td
                 a(href="http://purecss.io/grids/#pure-responsive-grids", target="_blank") Pure Responsive
             tr
-              td Flexible number
+              td Flexible # columns
               td
                 a(href="http://framelessgrid.com/", target="_blank") Frameless
               td
                 a(href="http://getbootstrap.com/css/#grid", target="_blank") Bootstrap 3
               td
                 a(href="http://goldengridsystem.com/", target="_blank") Golden Grid
+
     section(data-bespoke-state='')
       .content
-        h2 Class-based vs mixin-based
-        h2 Floats vs inline-block
-        h2 Spacers vs push/pulls
-        h2 Rows vs modules
+        .byline
+          .classy Alternate styles
+        .steps(data-bespoke-bullet)
+          h2(data-bespoke-bullet) • Class-based vs mixin-based
+          h2(data-bespoke-bullet) • Floats vs inline-block
+          h2(data-bespoke-bullet) • Spacers vs push/pulls
+          h2(data-bespoke-bullet) • Markup vs modules
+        .unbrokenline
+
     section(data-bespoke-state='')
       .content
-        h2 Let's build!
-        h2 Fixed width, flexible number grid
-        h2 Semantic, float-based, modular
+        .byline
+          .classy My example
+        .steps(data-bespoke-bullet)
+          h2(data-bespoke-bullet) • IE7+ support (no box-sizing)
+          h2(data-bespoke-bullet) • Class-based (no fancy preprocessor tricks)
+          h2(data-bespoke-bullet) • Floats & spacers
+          h2(data-bespoke-bullet) • Markup-heavy
+        .unbrokenline
+
     section(data-bespoke-state='')
       .content
-        h2 First up,
-        h2 We're going to look at how a few work, then build our own
-    //
-    //section(data-bespoke-state='')
-    //  .iframe-holster
-    //    h4 http://yeoman.io
-    //    iframe(src='http://yeoman.io/')
+        h2 DEMO
 
     section(data-bespoke-state='success')
       .content
@@ -150,20 +215,6 @@ block content
         h1
           strong Thank You!
         .unbrokenline
-    //
-    //section(data-bespoke-state='')
-    //  .content
-    //    .byline
-    //      .classy Also:
-    //    h1
-    //      strong ngMelb
-    //      |  is next Wednesday
-    //    .byline
-    //      .classy &
-    //    h1
-    //      strong CampJS
-    //      |  is August 9th
-    //    .unbrokenline
 
     section(data-bespoke-state='copter')
       .content
